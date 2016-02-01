@@ -21,6 +21,7 @@
 
 // OpenIGTLink includes
 #include <igtlTransformMessage.h>
+#include "igtlTransformConverter.h"
 
 // MRML includes
 #include <vtkMRMLNode.h>
@@ -60,6 +61,7 @@ class VTK_SLICER_OPENIGTLINKIF_MODULE_MRML_EXPORT vtkIGTLToMRMLLinearTransform :
 
  protected:
   igtl::TransformMessage::Pointer OutTransformMsg;
+  igtl::TransformConverter::Pointer Converter;
 
 };
 
